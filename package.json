@@ -1,0 +1,35 @@
+{
+  "name": "grubhub",
+  "version": "1.0.0",
+  "description": "GURU Restaurant webpage",
+  "main": "index.js",
+  "dependencies": {
+    "eslint-config-airbnb": "^18.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "webpack": "^4.41.5"
+  },
+  "scripts": {
+    "test": "t"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/R4Ajeti/GrubHubGuru.git"
+  },
+  "keywords": [
+    "guru",
+    "grubhub",
+    "restaurant",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Rinor Ajeti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/R4Ajeti/GrubHubGuru/issues"
+  },
+  "homepage": "https://github.com/R4Ajeti/GrubHubGuru#readme"
+}
