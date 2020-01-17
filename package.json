@@ -2,18 +2,24 @@
   "name": "grubhub",
   "version": "1.0.0",
   "description": "GURU Restaurant webpage",
-  "main": "index.js",
+  "private": true,
   "dependencies": {
-    "eslint-config-airbnb": "^18.0.1"
+    "eslint-config-airbnb": "^18.0.1",
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
+    "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.0",
-    "webpack": "^4.41.5"
+    "file-loader": "^5.0.2",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   },
   "scripts": {
-    "test": "t"
+    "test": "t",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
