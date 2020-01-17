@@ -31,7 +31,7 @@ To get a local copy up and running follow these simple example steps.
 - Github: [@r4ajeti](https://github.com/r4ajeti)
 - Twitter: [@r4ajeti](https://twitter.com/r4ajeti)
 - Linkedin: [linkedin](https://linkedin.com/r4ajeti)
-- Email: [@email](mailto:r4ajeti@gmail.com))
+- Email: [Gmail](mailto:r4ajeti@gmail.com))
 
 ## 🤝 Contributing
 
