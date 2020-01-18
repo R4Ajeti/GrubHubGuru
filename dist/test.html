@@ -23,9 +23,75 @@
       type="text/css"
       href="https://fonts.googleapis.com/css?family=Philosopher"
     />
+    <link href="../src/gifsee.min.css" rel="stylesheet" />
   </head>
 
   <body>
+    <script>
+      /* Depricateds
+      window.onload = function() {
+        function FauxGif(element, frames, speed) {
+          (this.currentFrame = 0),
+            (this.domElement = element),
+            (this.frames = frames || null),
+            (this.speed = speed || 200);
+          this.interval;
+          this.init();
+        }
+
+        FauxGif.prototype = {
+          init: function() {
+            // set the first one to the first image
+            console.log(this.frames[0]);
+            this.domElement.style.backgroundImage =
+              'url(' + this.frames[0] + ')';
+          },
+          pause: function() {
+            clearInterval(this.interval);
+          },
+          resume: function() {
+            var that = this;
+
+            that.interval = setInterval(function() {
+              console.log(that.frames[that.currentFrame]);
+              console.log(that.frames.length);
+              that.currentFrame < that.frames.length - 1
+                ? that.currentFrame++
+                : (that.currentFrame = 0);
+              that.domElement.style.backgroundImage =
+                'url(' + that.frames[that.currentFrame] + ')';
+            }, this.speed);
+          }
+        };
+
+        var frames = [];
+
+        var elem = document.querySelector('#faux-gif'),
+          gif = new FauxGif(elem, frames, 60);
+
+        elem.addEventListener('mouseenter', function() {
+          gif.resume();
+        });
+
+        elem.addEventListener('mouseleave', function() {
+          gif.pause();
+        });
+      };
+      */
+    </script>
+    <!--<div id="faux-gif"></div>-->
+    <!--<div style="position:absolute;">
+      <img
+        src="../src/openning_document.png"
+        class="gif_class"
+        data-gifsee="../src/openning_document.gif"
+        alt="gif not found"
+      />
+    </div>-->
+    <script src="../src/gifsee.min.js"></script>
+    <script>
+      // var myimg = new gifsee(document.querySelectorAll('div img')[0]);
+    </script>
     <div id="content">
       <div id="content-header">
         <div id="header-left"></div>
@@ -69,7 +135,7 @@
                 <h3>Kontakt / Info për rezervim</h3>
                 <p>
                   +383 49 373 838<br />
-                  <a href="mailto:webmaster@example.com" class="stdA"
+                  <a href="mailto:info-edi2@gmail.com" class="stdA"
                     >info-edi2@gmail.com</a
                   ><br />
                   <a id="down_application" href="#" target="_blank" class="stdA"

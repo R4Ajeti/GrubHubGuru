@@ -12,6 +12,9 @@ body {
   line-height: 1.1em;
   overflow-x: hidden;
   background-image: url('bg3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 a {
   font-size: 14px;
@@ -37,6 +40,11 @@ p {
 }
 .bg-highlighted {
   background-color: rgb(0, 0, 0, 0.85);
+}
+#faux-gif {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url('openning_document.gif');
 }
 
 #content {
@@ -90,6 +98,10 @@ p {
   font-size: 18px;
   width: 100px;
   line-height: 1.2em;
+}
+.about_short {
+  padding: 25px 10px;
+  font-size: 18px;
 }
 .stdA {
   color: #fff;
