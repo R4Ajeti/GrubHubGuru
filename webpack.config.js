@@ -10,7 +10,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Output Management'
+      title: 'Output Management',
+      template: './src/template.html'
     })
   ],
   mode: 'development',

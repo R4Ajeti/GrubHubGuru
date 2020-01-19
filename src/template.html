@@ -38,7 +38,6 @@
           this.interval;
           this.init();
         }
-
         FauxGif.prototype = {
           init: function() {
             // set the first one to the first image
@@ -51,7 +50,6 @@
           },
           resume: function() {
             var that = this;
-
             that.interval = setInterval(function() {
               console.log(that.frames[that.currentFrame]);
               console.log(that.frames.length);
@@ -63,16 +61,12 @@
             }, this.speed);
           }
         };
-
         var frames = [];
-
         var elem = document.querySelector('#faux-gif'),
           gif = new FauxGif(elem, frames, 60);
-
         elem.addEventListener('mouseenter', function() {
           gif.resume();
         });
-
         elem.addEventListener('mouseleave', function() {
           gif.pause();
         });
@@ -80,17 +74,17 @@
       */
     </script>
     <!--<div id="faux-gif"></div>-->
-    <!--<div style="position:absolute;">
+    <div style="position:absolute;z-index: 101;">
       <img
         src="../src/openning_document.png"
         class="gif_class"
         data-gifsee="../src/openning_document.gif"
         alt="gif not found"
       />
-    </div>-->
+    </div>
     <script src="../src/gifsee.min.js"></script>
     <script>
-      // var myimg = new gifsee(document.querySelectorAll('div img')[0]);
+      var myimg = new gifsee(document.querySelectorAll('div img')[0]);
     </script>
     <div id="content">
       <div id="content-header">

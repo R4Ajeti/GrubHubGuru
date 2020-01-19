@@ -22,14 +22,14 @@
     "style-loader": "^1.1.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-middleware": "^3.7.2"
+    "webpack-dev-server": "^3.10.1"
   },
   "scripts": {
     "test": "t",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server --config webpack.config.js --open",
     "server": "node server.js",
-    "build": "webpack"
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
