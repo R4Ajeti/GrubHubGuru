@@ -1,7 +1,8 @@
 const info = () => {
   const base = document.querySelector('#content');
 
-  infoContainer = document.createElement('div');
+  const infoContainer = document.createElement('div');
+  infoContainer.setAttribute('id', 'partneret');
 
   const hInfo = document.createElement('h1');
   hInfo.innerHTML = 'Historiku';
@@ -10,7 +11,7 @@ const info = () => {
   tabsInfo.classList.add('tabs');
 
   const t1Tabs = document.createElement('div');
-  t1Tabs.classList.add('tabs-2');
+  t1Tabs.classList.add('tab-2');
 
   const lT1 = document.createElement('label');
   lT1.innerHTML = 'Restaurant EDI';
@@ -20,7 +21,7 @@ const info = () => {
   inT1.setAttribute('id', 'tab2-1');
   inT1.name = 'tabs-two';
   inT1.type = 'radio';
-  inT1.checked = 'checked';
+  inT1.checked = true;
 
   const divT1 = document.createElement('div');
 
@@ -42,14 +43,14 @@ const info = () => {
   t1Tabs.appendChild(divT1);
 
   const t2Tabs = document.createElement('div');
-  t2Tabs.classList.add('tabs-2');
+  t2Tabs.classList.add('tab-2');
 
   const lT2 = document.createElement('label');
   lT2.innerHTML = 'Restaurant EDI 2';
   lT2.htmlFor = 'tab2-2';
 
   const inT2 = document.createElement('input');
-  inT2.setAttribute('id', 'tab2-1');
+  inT2.setAttribute('id', 'tab2-2');
   inT2.name = 'tabs-two';
   inT2.type = 'radio';
 
@@ -79,6 +80,6 @@ const info = () => {
   infoContainer.appendChild(hInfo);
   infoContainer.appendChild(tabsInfo);
 
-  base.appendChild(infoContainer);
+  return infoContainer;
 };
 export default info;

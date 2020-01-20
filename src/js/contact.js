@@ -1,9 +1,11 @@
+import imageFb from '../img/fb.png';
+
 const contact = () => {
   const base = document.querySelector('#content');
 
   const contactContainer = document.createElement('div');
 
-  mapContainer = document.createElement('div');
+  const mapContainer = document.createElement('div');
   mapContainer.setAttribute('id', 'map_container');
 
   const hMap = document.createElement('h3');
@@ -16,7 +18,7 @@ const contact = () => {
   mapContainer.appendChild(hMap);
   mapContainer.appendChild(addrMap);
 
-  reserContainer = document.createElement('div');
+  const reserContainer = document.createElement('div');
   reserContainer.setAttribute('id', 'reservation');
 
   const hReser = document.createElement('h3');
@@ -43,27 +45,27 @@ const contact = () => {
   reserContainer.appendChild(hReser);
   reserContainer.appendChild(pReser);
 
-  socialContainer = document.createElement('div');
+  const socialContainer = document.createElement('div');
   socialContainer.setAttribute('id', 'social');
 
-  ulSocial = document.createElement('ul');
+  const ulSocial = document.createElement('ul');
   ulSocial.classList.add('social');
 
-  liUl1 = document.createElement('li');
+  const liUl1 = document.createElement('li');
 
-  aLi1 = document.createElement('a');
+  const aLi1 = document.createElement('a');
   aLi1.href = '#';
   aLi1.classList.add('fb_btn');
 
-  imgA1 = document.createElement('img');
-  imgA1.src = '../src/fb.png';
+  const imgA1 = document.createElement('img');
+  imgA1.src = imageFb;
 
   aLi1.appendChild(imgA1);
   liUl1.appendChild(aLi1);
 
-  liUl2 = document.createElement('li');
+  const liUl2 = document.createElement('li');
 
-  aLi2 = document.createElement('a');
+  const aLi2 = document.createElement('a');
   aLi2.href = '#';
   aLi2.classList.add('comments_btn', 'stdA');
   aLi2.innerHTML = 'Sugjerimet tuaja';
@@ -76,6 +78,6 @@ const contact = () => {
   contactContainer.appendChild(mapContainer);
   contactContainer.appendChild(reserContainer);
   contactContainer.appendChild(socialContainer);
-  base.appendChild(contactContainer);
+  return contactContainer;
 };
 export default contact;

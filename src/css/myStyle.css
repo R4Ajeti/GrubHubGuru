@@ -11,7 +11,7 @@ body {
   background-size: cover;
   line-height: 1.1em;
   overflow-x: hidden;
-  background-image: url('bg3.jpg');
+  background-image: url('../img/bg3.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -44,7 +44,7 @@ p {
 #faux-gif {
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url('openning_document.gif');
+  background-image: url('../img/openning_document.gif');
 }
 
 #content {
@@ -119,13 +119,13 @@ address {
   float: left;
   width: 50%;
   height: 62px;
-  background: url(topb_left_new.png) left bottom no-repeat;
+  background: url(../img/topb_left_new.png) left bottom no-repeat;
 }
 #header-right {
   float: right;
   width: 50%;
   height: 62px;
-  background: url(topb_right_new.png) right bottom no-repeat;
+  background: url(../img/topb_right_new.png) right bottom no-repeat;
 }
 #logo {
   left: 50%;

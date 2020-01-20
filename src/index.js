@@ -1,4 +1,7 @@
+import './main.scss';
 import _ from 'lodash';
-import './style.css';
-import Icon from './icon.png';
-import printMe from './print.js';
+import header from './js/header.js';
+import main from './js/main.js';
+
+header();
+main();
