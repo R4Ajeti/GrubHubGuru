@@ -2,47 +2,74 @@ import about from './about.js';
 import contact from './contact.js';
 import info from './info.js';
 
-const main = () => {
-  const base = document.querySelector('#content');
+const main = flag => {
+  if (!flag) {
+    const menuContainer = document.createElement('h1');
+    menuContainer.innerHTML = 'Menu 888';
+    const row = document.getElementsByClassName('row')[0];
+    row.parentNode.replaceChild(menuContainer, row);
+    const btn = document.getElementById('menu');
+    btn.innerHTML = 'HOME';
+    btn.onclick = function() {
+      main(true);
+    };
+  } else {
+    const base = document.querySelector('#content');
 
-  const mainContainer = document.createElement('div');
-  mainContainer.setAttribute('id', 'content-main');
-  mainContainer.classList.add('bg-highlighted');
+    if (base.childElementCount > 2) {
+      base.removeChild(base.lastChild);
+      base.removeChild(base.lastChild);
+      base.removeChild(base.lastChild);
+      base.removeChild(base.lastChild);
+    }
 
-  const innerMain = document.createElement('div');
-  innerMain.setAttribute('id', 'content-main-inner');
+    const btn = document.createElement('BUTTON');
+    btn.setAttribute('id', 'menu');
+    btn.innerHTML = 'MENU';
+    btn.onclick = function() {
+      main(false);
+    };
+    base.appendChild(btn);
 
-  const rowInner = document.createElement('div');
-  rowInner.classList.add('row');
+    const mainContainer = document.createElement('div');
+    mainContainer.setAttribute('id', 'content-main');
+    mainContainer.classList.add('bg-highlighted');
 
-  const leftRow = document.createElement('div');
-  leftRow.classList.add('col-xs-6', 'col-md-6', 'col-sm-6');
+    const innerMain = document.createElement('div');
+    innerMain.setAttribute('id', 'content-main-inner');
 
-  leftRow.appendChild(about());
+    const rowInner = document.createElement('div');
+    rowInner.classList.add('row');
 
-  const rightRow = document.createElement('div');
-  rightRow.classList.add('col-xs-6', 'col-md-6', 'col-sm-6');
+    const leftRow = document.createElement('div');
+    leftRow.classList.add('col-xs-6', 'col-md-6', 'col-sm-6');
 
-  rightRow.appendChild(contact());
+    leftRow.appendChild(about());
 
-  rowInner.appendChild(leftRow);
-  rowInner.appendChild(rightRow);
+    const rightRow = document.createElement('div');
+    rightRow.classList.add('col-xs-6', 'col-md-6', 'col-sm-6');
 
-  innerMain.appendChild(rowInner);
-  mainContainer.appendChild(innerMain);
+    rightRow.appendChild(contact());
 
-  base.appendChild(mainContainer);
+    rowInner.appendChild(leftRow);
+    rowInner.appendChild(rightRow);
 
-  const br = document.createElement('br');
+    innerMain.appendChild(rowInner);
+    mainContainer.appendChild(innerMain);
 
-  base.appendChild(br);
+    base.appendChild(mainContainer);
 
-  const innerContainer = document.createElement('div');
-  innerContainer.setAttribute('id', 'content-inner');
-  innerContainer.classList.add('bg-highlighted');
+    const br = document.createElement('br');
 
-  innerContainer.appendChild(info());
+    base.appendChild(br);
 
-  base.appendChild(innerContainer);
+    const innerContainer = document.createElement('div');
+    innerContainer.setAttribute('id', 'content-inner');
+    innerContainer.classList.add('bg-highlighted');
+
+    innerContainer.appendChild(info());
+
+    base.appendChild(innerContainer);
+  }
 };
 export default main;

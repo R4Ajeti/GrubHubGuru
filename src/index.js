@@ -4,4 +4,4 @@ import header from './js/header.js';
 import main from './js/main.js';
 
 header();
-main();
+main(true);
