@@ -1,11 +1,12 @@
 import about from './about.js';
 import contact from './contact.js';
 import info from './info.js';
+import items from './items.js';
 
 const main = flag => {
   if (!flag) {
     const menuContainer = document.createElement('h1');
-    menuContainer.innerHTML = 'Menu 888';
+    menuContainer.appendChild(items());
     const row = document.getElementsByClassName('row')[0];
     row.parentNode.replaceChild(menuContainer, row);
     const btn = document.getElementById('menu');
