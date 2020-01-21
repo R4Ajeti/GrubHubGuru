@@ -1,18 +1,6 @@
+import { maxColValInMatrix, minColValInMatrix } from './staticFunctions.js';
+
 const items = () => {
-  const maxColValInMatrix = (matrix, col, func) => {
-    let max = -1;
-    matrix.forEach(value => {
-      max = Math.max(max, func(value[col]));
-    });
-    return max;
-  };
-  const minColValInMatrix = (matrix, col, func) => {
-    let min = Number.MAX_SAFE_INTEGER;
-    matrix.forEach(value => {
-      min = Math.min(min, func(value[col]));
-    });
-    return min;
-  };
   const strToEuro = x => parseInt(x.substr(0, x.length - 1).replace('.', ''));
   const itemFeatureH = ['#', 'Përshkrimi', 'Përmbajtja', 'Cmimi'];
   const itemFeatureV = [1, 2, 3, 4, 5, 6];
