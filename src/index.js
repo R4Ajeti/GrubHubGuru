@@ -1,7 +1,6 @@
 import './main.scss';
-import _ from 'lodash';
-import header from './js/header.js';
-import main from './js/main.js';
+import header from './js/header';
+import main from './js/main';
 
 header();
 main(true);
