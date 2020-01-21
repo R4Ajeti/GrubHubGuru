@@ -1,6 +1,4 @@
 const info = () => {
-  const base = document.querySelector('#content');
-
   const infoContainer = document.createElement('div');
   infoContainer.setAttribute('id', 'partneret');
 

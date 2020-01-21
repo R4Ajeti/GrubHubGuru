@@ -1,6 +1,4 @@
 const aboutSection = () => {
-  const base = document.querySelector('#content');
-
   const aboutContainer = document.createElement('div');
   aboutContainer.setAttribute('id', 'content-about');
 

@@ -1,7 +1,7 @@
-import about from './about.js';
-import contact from './contact.js';
-import info from './info.js';
-import items from './items.js';
+import about from './about';
+import contact from './contact';
+import info from './info';
+import items from './items';
 
 const main = flag => {
   if (!flag) {
@@ -11,7 +11,7 @@ const main = flag => {
     row.parentNode.replaceChild(menuContainer, row);
     const btn = document.getElementById('menu');
     btn.innerHTML = 'HOME';
-    btn.onclick = function() {
+    btn.onclick = function test() {
       main(true);
     };
   } else {
@@ -27,7 +27,7 @@ const main = flag => {
     const btn = document.createElement('BUTTON');
     btn.setAttribute('id', 'menu');
     btn.innerHTML = 'MENU';
-    btn.onclick = function() {
+    btn.onclick = function test() {
       main(false);
     };
     base.appendChild(btn);

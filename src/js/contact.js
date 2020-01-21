@@ -1,8 +1,6 @@
 import imageFb from '../img/fb.png';
 
 const contact = () => {
-  const base = document.querySelector('#content');
-
   const contactContainer = document.createElement('div');
 
   const mapContainer = document.createElement('div');
@@ -12,8 +10,7 @@ const contact = () => {
   hMap.innerHTML = 'Ne gjendemi këtu';
 
   const addrMap = document.createElement('address');
-  addrMap.innerHTML =
-    'Adresa: M9 Eqrem Çabej, Prishtinë,<br>10 000 Prishtinë, Kosovë';
+  addrMap.innerHTML = 'Adresa: M9 Eqrem Çabej, Prishtinë,<br>10 000 Prishtinë, Kosovë';
 
   mapContainer.appendChild(hMap);
   mapContainer.appendChild(addrMap);
